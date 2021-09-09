@@ -4,11 +4,8 @@ pipeline {
     stages {
         stage('init') {
             steps {
-                sh 'pwd'
-                sh 'ls -lh'
-                sh 'whoami'
-                sh 'which npm'
-                sh 'which node'
+                sh 'npm install'
+                sh 'npx teamsfx -v'
             }
         }
     }
