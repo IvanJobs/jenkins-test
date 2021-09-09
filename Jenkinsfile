@@ -4,8 +4,7 @@ pipeline {
     stages {
         stage('init') {
             steps {
-                bat 'npm install -g @microsoft/teamsfx-cli'
-                bat 'teamsfx -v'
+                bat 'npm install -g @microsoft/teamsfx-cli; teamsfx -v'
             }
         }
     }
