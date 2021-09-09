@@ -6,8 +6,7 @@ pipeline {
             steps {
                 sh 'pwd'
                 sh 'ls -lh'
-                sh 'npm install'
-                sh 'npx teamsfx -v'
+                sh 'whoami'
             }
         }
     }
