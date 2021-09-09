@@ -1,10 +1,14 @@
 pipeline {
-    agent any
+    agent {
+        docker {
+            image 'ubuntu:latest'
+        }
+    }
 
     stages {
         stage('init') {
             steps {
-                bat 'npm install -g @microsoft/teamsfx-cli; teamsfx -v'
+                bat 'npm install -g @microsoft/teamsfx-cli'
             }
         }
     }
