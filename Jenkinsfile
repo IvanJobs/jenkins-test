@@ -12,7 +12,7 @@ pipeline {
         stage('build') {
             steps {
                 sh 'cd tabs && npm install && npm run build'
-                sh 'cd ../bot && npm install'
+                sh 'cd bot && npm install'
             }
         }
 
